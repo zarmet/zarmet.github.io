@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Zach's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <img class="backmap" src="./images/world_map.jpg" id="Typing_Video" alt="Map of Ostoria">
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Zach Armet's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>I am enough of the artist to draw freely upon my imagination. 
+                        <br>Imagination is more important than knowledge. 
+                        <br>Knowledge is limited. Imagination encircles the world.
+                    </q>
+                    <br> 
+                    <br>-Albert Einstein
+                    <br>
+                    <br>
+                    <br>Welcome to my portfolio website! 
+                    <br>This page is dedicated to all of my creative and professional pursuits.
+                    <br>
+                    <br> Stay awhile and enjoy the dive! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img class="photo" src="./images/IMG_0132.jpg" alt="The rolling Berkshire Hills">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am an aspiring software developer and storyteller from the the lovely Berkshires in Massachusetts.
+                    <br>
+                    <br>As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, I am becoming experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more! 
+                    <br>
+                    <br>I'd love to help you with any software needs you have. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p class="center">
+                    You can view my coding projects on my GitHub profile <a href="https://github.com/zarmet" target="_blank">here</a>.
+                    <br>
+                    <br>
+                    <br>
+                    <p class="surprise">
+                        <q>Ya-ha-ha! You found me!</q>
+                        <br>
+                        <br>-Korok
+                    </p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img class="photo" src="./images/IMG_0143.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/mwkanaaa" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
