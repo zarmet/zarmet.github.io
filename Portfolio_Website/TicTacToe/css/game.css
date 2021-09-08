@@ -1,0 +1,42 @@
+html {
+    background-color: black;
+    background-image: url('../images/co341S.jpg');
+}
+
+
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+td {
+    border: 4px solid gold;
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+    display: block;
+    width: 50%;
+    margin: auto;
+}

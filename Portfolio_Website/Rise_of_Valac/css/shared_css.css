@@ -1,0 +1,412 @@
+/*=================================
+AUTHOR: Zach Armet
+DnD Website
+===================================
+GENERIC STYLE
+================================*/
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75%;
+    -webkit-tap-highlight-color: antiquewhite;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background-image: url("../images/background.jpg");
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: darkred;
+    background-color: url("../images/background.jpg");
+}
+
+nav {
+display: block;
+}
+
+footer {
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+h1 {
+    line-height: 50px;
+    font-weight:900;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px 3px gray;
+    margin-bottom: 100px;
+}
+
+
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 386px;
+    background: darkred;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px gray
+}
+
+h2 {
+    line-height: 50px;
+    color: darkred;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*=======================
+NAVIGATION MENU CSS
+=======================*/
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix:after, .container:after, .navbar:after {
+    clear: both;
+    display: table;
+    content: "";
+} 
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: "";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=========================
+HOME SECTION CSS
+==========================*/
+
+
+
+
+.title {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#home {
+    background-image: url(../images/Chapter\ 2\ Map.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    height: 1080px;
+    z-index: 50;
+}
+
+article {
+    background-color: rgb(226,196,156);
+    width: 1080;
+    top: 50;
+    left: 0;
+    margin: 2px;
+    font-weight: bolder;
+    font-style: bold;
+    text-align: center;
+    display: block;
+    height: 1080px;
+    z-index: 700;
+    opacity: .8; 
+}
+
+
+.subtitle {
+    padding-top: 70px;
+}
+
+.info {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 8;
+    font-style: oblique;
+}
+
+
+.story {
+    font-size: 16;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin: 2px;
+}
+
+
+
+/*======================
+PHOTO GALLERY CSS
+=======================*/
+
+
+
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10 px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: url("../images/background.jpg");
+    box-shadow: darkgray;
+}
+
+
+#gallery p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.enlarge {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+/*====================
+SIGNUP PAGE CSS
+====================*/
+
+
+
+
+.heading-padding {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+#signup {
+    background-image: url("../images/Chapter\ 2\ Map.jpg");
+}
+
+
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgb(226,196,156);
+    box-shadow: darkgray;
+    opacity: .8;
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3 em;
+    letter-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 40px 12px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: url("../images/background.jpg");
+    box-shadow: 2px 3px 3px 0px darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: rgb(211, 197, 179);
+    box-shadow: inset 0px 3px 0px 0px darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px goldenrod;
+}
+
+.submit {
+    margin-left: 250px;
+    margin-top: 45px;
+}
+
+.form-spacer{
+    margin: auto;
+    object-position: center;
+}
+
+.terms {
+    margin-top: 20%;
+    margin-left: 230px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 5px;
+    padding-bottom: 30px;
+    color: black;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    text-align: center;
+}
+
+.terms:hover {
+    color: darkslateblue;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    margin: 140;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: url("../images/background.jpg");
+    box-shadow: 1px 1px 4px 0px darkgray;
+}
+
+.submit input[type="submit"]:hover {
+    color: darkblue;
+    background-color: darkgoldenrod;
+    box-shadow: inset1px 2px 15px 0 darkgray;
+    text-decoration: underline;
+}
+

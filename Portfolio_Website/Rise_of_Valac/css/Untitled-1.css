@@ -1,0 +1,136 @@
+/*=================================
+AUTHOR: Zach Armet
+DnD Website
+===================================
+GENERIC STYLE
+================================*/
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75%;
+    -webkit-tap-highlight-color: antiquewhite;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: darkred;
+    background-color: antiquewhite;
+}
+
+footer, nav {
+display: block;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight:900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px 3px gray;
+}
+
+
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: darkred;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px gray
+}
+
+h2 {
+    line-height: 50px;
+    color: darkred;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clearfix:after, .container:after, .navbar:after {
+    clear: both;
+    display: table;
+    content: "";
+} 
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: "";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#home {
+    background: url("../images/Chapter 2 Map.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: darkred;
+
+}

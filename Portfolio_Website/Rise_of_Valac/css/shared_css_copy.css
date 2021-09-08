@@ -1,0 +1,285 @@
+/*=================================
+AUTHOR: Zach Armet
+DnD Website
+===================================
+GENERIC STYLE
+================================*/
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75%;
+    -webkit-tap-highlight-color: antiquewhite;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: darkred;
+    background-color: antiquewhite;
+}
+
+footer, nav {
+display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight:900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px 3px gray;
+}
+
+
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: darkred;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px gray
+}
+
+h2 {
+    line-height: 50px;
+    color: darkred;
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.clearfix:after, .container:after, .navbar:after {
+    clear: both;
+    display: table;
+    content: "";
+} 
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: "";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#home {
+    background: url("../images/Chapter 2 Map.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: darkred;
+
+}
+
+.head-main {
+    text-shadow: gray;
+    font-variant: small-caps;
+    color:darkred;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5 em;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double antiquewhite;
+    padding: 10px;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50 px 20 px 10 px 20 px;
+    text-transform: uppercase;
+}
+
+.head-last{
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 20 px 20px;
+    border: darkred;
+    padding: 5px;
+}
+
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10 px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: antiquewhite;
+    box-shadow: darkgray;
+}
+
+#contact {
+    background-color: darkred;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: darkred;
+    box-shadow: darkgray;
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3 em;
+    letter-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 12px 12px;
+    width: 70%;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: antiquewhite;
+    box-shadow: 2px 3px 3px 0px darkred;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: antiquewhite;
+    box-shadow: inset 0px 3px 0px 0px darkred;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px darkgray;
+}
+
+.form-spacer{
+    padding: 30px 39px;
+}
+
+.terms {
+    margin-top: 13%;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: darkgray;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}

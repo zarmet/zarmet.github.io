@@ -1,0 +1,84 @@
+body {background-color:antiquewhite}
+/*Big Square*/
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: antiquewhite;
+    border: solid darkred 2px;
+    border-radius: 5%;
+}
+/*Header*/
+h1 {
+    color: darkred;
+    text-shadow: 1px .5px 4px rgba(47, 79, 79, .6);
+    margin-left: 100px;
+}
+
+/*smiley faces in squares*/
+.squares:nth-child(-n+4){
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/icons/icons.png");
+    float: left;
+    margin: 6px;
+    border-radius: 10%;
+    cursor: pointer; 
+}
+
+/*Text in Squares*/
+.squares:nth-child(-n+4) p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 0px;
+    color: azure;
+}
+
+/*Individual Square Colors*/
+.squares:nth-child(1) {
+    background-color: darkred;
+}
+.squares:nth-child(2) {
+    background-color: darkgoldenrod;
+}
+.squares:nth-child(3) {
+    background-color: darkcyan;
+}
+.squares:nth-child(4) {
+    background-color: darkgreen;
+}
+
+/*Hover Effects*/
+.squares:nth-child(-n+4):hover{
+    background-image: url("../images/icons/icons2.png");
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+
+}
+.squares:nth-child(1):hover {
+    background-color: red;
+}
+.squares:nth-child(2):hover {
+    background-color: gold;
+}
+.squares:nth-child(3):hover {
+    background-color: cyan;
+}
+.squares:nth-child(4):hover {
+    background-color: green;
+}
+
+/*ANIMATION*/
+
+@keyframes race{
+    0%,100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/icons2.png");   
+    }
+    50% {
+        transform: translateY(330px);
+    }
+}

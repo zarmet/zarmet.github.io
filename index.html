@@ -13,13 +13,14 @@
 
     <!--Body-->
     <body class="Background">
+        <script src="./js/portfolio.js">
+        </script>
         
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a href="#GitHub">Projects</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -66,7 +67,7 @@
                     <br>
                     <br>As a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, I am becoming experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more! 
                     <br>
-                    <br>I'd love to help you with any software needs you have. <a href="#Contact">Contact</a> me below!
+                    <br>I'd love to help you with any software needs you have!
                 </p>
             </div>
         </div>
@@ -74,13 +75,18 @@
         <!--GitHub section-->
         <div class="Row" id="GitHub">
             <!--Left column-->
-            <div class="Column_1">
+            <div class="Column_1 Column_tall">
                 <h1>GitHub</h1>
                 <p class="center">
-                    You can view my coding projects on my GitHub profile <a href="https://github.com/zarmet" target="_blank">here</a>.
+                    You can view my coding projects on my GitHub profile <a href="https://github.com/zarmet" target="_blank">here</a>,
                     <br>
                     <br>
                     <br>
+                    Check out my Dungeons and Dragons campaign <a href="./Portfolio_Website/Rise_of_Valac/one_page_website.html" target="new">here</a>,
+                    <br>
+                    <br>
+                    <br>
+                    Or overthrow the Empire in a good ol' game of <a href="./Portfolio_Website/TicTacToe/TicTacToe.html" target="new">Tic Tac Toe</a>!
                     <p class="surprise">
                         <q>Ya-ha-ha! You found me!</q>
                         <br>
@@ -89,30 +95,31 @@
                 </p>
             </div>
             <!--Right column-->
-            <div class="Column_2">
+            <div class="Column_2 Column_tall">
                 <a href="https://github.com/zarmet" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
             </div>
         </div>
 
         <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img class="photo" src="./images/IMG_0143.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
+       
+    
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://formspree.io/f/mwkanaaa" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
+                <button class="open-button" onclick="openForm()">Contact</button>
+                <div class="form-popup" id="myForm">
+                    <form name="myForm" class="form-container" action="https://formspree.io/f/mwkanaaa" onsubmit="return validateForm ()" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                        <h3>Please provide your contact info.</h3>
+                        <label>Name:</label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label>Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <label>Phone:</label>
+                            <input type="text" id="Phone" name="Phone" placeholder="Please enter your phone number here">
+                        <label>Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                            <button type="submit" class='btn' value="SUBMIT">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
             </div>
         </div>
 
